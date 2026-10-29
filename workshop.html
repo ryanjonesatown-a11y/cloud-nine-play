@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloud Nine – Model Workshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Lilita+One&family=Caveat:wght@600;700&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+  <style>html,body{background:#1b2238;height:100%;margin:0;font-family:"Baloo 2",system-ui,sans-serif;overflow:hidden}body{flex-direction:column;display:flex}#bar{background:#4a2c17;border-bottom:3px solid #e8b443;flex-wrap:wrap;flex:none;align-items:center;gap:6px;padding:8px 12px;display:flex}#bar b{color:#ffe9a8;margin-right:10px;font-size:18px}#bar button,#bar select{color:#3b2414;cursor:pointer;background:#f6e7c1;border:2px solid #2a1a12;border-radius:10px;padding:2px 12px;font:700 15px "Baloo 2",system-ui,sans-serif}#bar button.on{background:#ffcf3f;box-shadow:inset 0 0 0 2px #fff6}#bar .sep{background:#e8b44388;width:1px;height:26px;margin:0 6px}#bar small{color:#f6e7c1aa;margin-left:auto;font-size:13px}#game{flex:1;min-height:0;position:relative}</style>
+  <script type="module" crossorigin src="./assets/workshop-CkwFRNxn.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/SneakRig-CtycJf5H.js">
+</head>
+<body>
+  <div id="bar">
+    <b>Model Workshop</b>
+    <select id="kid" title="Character">
+      <option value="wyatt">Wyatt</option>
+      <option value="ruby">Ruby</option>
+      <option value="nibbles">Nibbles</option>
+      <option value="sneakA">Sneaky A: Classic Sneak (new)</option>
+      <option value="sneakB">Sneaky B: Shadow Bandit (new)</option>
+      <option value="sneakC">Sneaky C: Scruffy Scamp (new)</option>
+      <option value="sneaky">Sneaky goblin</option>
+      <option value="greedy">Greedy goblin</option>
+      <option value="big">Big goblin</option>
+      <option value="boss">Pot-Lid Goblin</option>
+    </select>
+    <span id="demos" style="display:contents"></span>
+    <span class="sep"></span>
+    <button data-act="helmet">H Helmet</button>
+    <button data-act="flip">F Turn around</button>
+    <button data-act="slow">S Slow-mo</button>
+    <select id="bgsel" title="Background">
+      <option value="meadow">Cloud Meadow</option>
+      <option value="rooftops">Rooftops (dusk)</option>
+      <option value="ridge">Breezy Ridge</option>
+      <option value="kitchen">Giant's Kitchen</option>
+      <option value="pantry">Night Pantry</option>
+      <option value="plain">Plain grey</option>
+    </select>
+    <small>Game: <a href="/" style="color:#ffe9a8">jump test</a></small>
+  </div>
+  <div id="game"></div>
+</body>
+</html>
